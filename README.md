@@ -2,9 +2,9 @@ Escuela Colombiana de Ingeniería
 
 Arquitecturas de Software – ARSW
 
-####Taller – programación concurrente, condiciones de carrera y sincronización de hilos. EJERCICIO INDIVIDUAL O EN PAREJAS.
+#### Taller – programación concurrente, condiciones de carrera y sincronización de hilos. EJERCICIO INDIVIDUAL O EN PAREJAS.
 
-#####Parte I – Antes de terminar la clase.
+##### Parte I – Antes de terminar la clase.
 
 Creación, puesta en marcha y coordinación de hilos.
 
@@ -12,20 +12,20 @@ Creación, puesta en marcha y coordinación de hilos.
 
 ![](./img/media/parte1.1.png)
 
-#####Al ejecutar el programa con los números primos verificamos visualmente con el monitor de recursos de Windows, que si se ejecuta el proceso a través del IDLE los CPUs del computador son utilizados en su totalidad, al inicio del proceso, pero mientras transcurre el tiempo disminuye el consumo de recursos
+##### Al ejecutar el programa con los números primos verificamos visualmente con el monitor de recursos de Windows, que si se ejecuta el proceso a través del IDLE los CPUs del computador son utilizados en su totalidad, al inicio del proceso, pero mientras transcurre el tiempo disminuye el consumo de recursos
 
 2. Modifique el programa para que, en lugar de resolver el problema con un solo hilo, lo haga con tres, donde cada uno de éstos hará la tarcera parte del problema original. Verifique nuevamente el funcionamiento, y nuevamente revise el uso de los núcleos del equipo.
 
 ![](./img/media/parte1.2.png)
 ![](./img/media/parte1.2-cores.png)
 
-#####Al hacer el cambio de los hilos y ejecutar el proceso podemos evidenciar que el tiempo y los recursos que utilizaba anteriormente, se mantiene casi igual, esto puede ser por que el proceso que se está utilizando es muy sencillo para la capacidad del procesador
+##### Al hacer el cambio de los hilos y ejecutar el proceso podemos evidenciar que el tiempo y los recursos que utilizaba anteriormente, se mantiene casi igual, esto puede ser por que el proceso que se está utilizando es muy sencillo para la capacidad del procesador
 
 3. Lo que se le ha pedido es: debe modificar la aplicación de manera que cuando hayan transcurrido 5 segundos desde que se inició la ejecución, se detengan todos los hilos y se muestre el número de primos encontrados hasta el momento. Luego, se debe esperar a que el usuario presione ENTER para reanudar la ejecución de los mismo.
 
 
 
-#####Parte II 
+##### Parte II 
 
 
 Para este ejercicio se va a trabajar con un simulador de carreras de galgos (carpeta parte2), cuya representación gráfica corresponde a la siguiente figura:
