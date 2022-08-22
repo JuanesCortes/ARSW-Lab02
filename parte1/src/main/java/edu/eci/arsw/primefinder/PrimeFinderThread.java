@@ -3,10 +3,11 @@ package edu.eci.arsw.primefinder;
 import java.util.LinkedList;
 import java.util.List;
 
-public class PrimeFinderThread extends Thread{
+public class PrimeFinderThread implements Runnable{
 
-	
-	int a,b;
+	Thread hilo;
+	boolean enEjecucion;
+	int a,b,i;
 	
 	private List<Integer> primes=new LinkedList<Integer>();
 	
@@ -14,15 +15,44 @@ public class PrimeFinderThread extends Thread{
 		super();
 		this.a = a;
 		this.b = b;
+		this.i = a;
+		hilo = new Thread(this);
+		enEjecucion = false;
 	}
+	
+	public synchronized void iniciar() {
+		enEjecucion = true;
+		hilo.start();
+	}
+	
+	public synchronized void detener() {
+		enEjecucion = false;
+		
+	}
+	
+	public synchronized void reanudar() {
+		enEjecucion = true;
+		notify();
+	}
+	
 
 	public void run(){
-		for (int i=a;i<=b;i++){						
-			if (isPrime(i)){
+		for (int i = a; i <= b; i++) {
+			if (isPrime(i)) {
 				primes.add(i);
+				System.out.println(i);
 			}
+			synchronized (this) {
+                while (!enEjecucion) {
+                    try {
+						wait();
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+                }
+                
+            }
 		}
-		
 		
 	}
 	
