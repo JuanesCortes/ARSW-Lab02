@@ -2,6 +2,9 @@ Escuela Colombiana de Ingeniería
 
 Arquitecturas de Software – ARSW
 
+### Juan Esteban Cortes Perez
+### Andres Felipe Martinez
+
 #### Taller – programación concurrente, condiciones de carrera y sincronización de hilos. EJERCICIO INDIVIDUAL O EN PAREJAS.
 
 ##### Parte I – Antes de terminar la clase.
