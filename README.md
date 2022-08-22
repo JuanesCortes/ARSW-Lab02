@@ -60,6 +60,11 @@ Taller.
     dichas inconsistencias). A partir de esto, identifique las regiones
     críticas () del programa.
 
+![](./img/media/parte2.2.1.png)
+![](./img/media/parte2.2.2.png)
+
+##### Cuando se corrio el programa varias veces existe la posibilidad de que algunos galgos lleguen al mismo tiempo y esto genera que el mensaje arroje un dato erroneo en la cantidad de galgos participantes esto nos deja idea que las regiones criticas estan al momento de tomar la posicion de llegada de la clase "RegistroLlegada" y actualizar estas posiciones.
+
 3.  Utilice un mecanismo de sincronización para garantizar que a dichas
     regiones críticas sólo acceda un hilo a la vez. Verifique los
     resultados.

@@ -37,7 +37,7 @@ public class Galgo extends Thread {
 		}
 	}
 
-
+	
 	@Override
 	public void run() {
 		
